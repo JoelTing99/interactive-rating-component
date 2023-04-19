@@ -35,4 +35,7 @@ let btn = document.querySelector("button");
 btn.addEventListener("click", () => {
     document.querySelector(".rating-card").classList.add("hidden");
     document.querySelector(".thanks-card").classList.remove("hidden");
+
+    document.querySelector("#rate").innerHTML = selectValue;
 });
+

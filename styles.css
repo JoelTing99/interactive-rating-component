@@ -12,28 +12,29 @@ body {
 
 .rating-title, .thanks-title {
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1.6rem;
 }
 
 .rating-title {
-    margin: 15px auto;
+    margin: 2rem auto 1rem;
 }
 
 .thanks-title {
-    margin: auto;
+    margin: 2rem auto 1rem;
 }
 
 .rating-instruction, .thanks-instruction {
     color:rgba(255, 255, 255, 60%);
-    font-size: 10px;
+    line-height: 1.5rem;
 }
 
-.rating-instruction {
-    line-height: 16px;
+.rating-instruction, #rate {
     margin: 10px auto;
+    font-size: 0.8rem;
 }
 
 .thanks-instruction {
+    font-size: 0.9rem;
     margin: auto;
 }
 
@@ -42,7 +43,9 @@ body {
 }
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
+    color:rgb(255, 255, 255);
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -59,11 +62,9 @@ body {
 .rating-card, .thanks-card {
     background: linear-gradient(rgb(33, 40, 50), rgb(23, 30, 40));
     aspect-ratio: 1 / 1;
-    min-width: 315px;
-    max-width: 1380px;
-
+    width: 315px;
     border-radius: 10%;
-    margin: 10vh 10vw;
+    margin: 10vh auto;
     padding: 30px; 
 }
 
@@ -90,12 +91,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px auto;
+    margin: 1rem;
 }
 
 .rating li {
     color:rgb(101, 109, 119);
-    font-size: 12px;
+    font-size: 1rem;
+    padding: 1rem;
 }
 
 .btn {
@@ -107,9 +109,9 @@ body {
     color: rgb(255, 255, 255);
     background-color: rgb(251, 116, 19);
     border: none;
-    border-radius: 10% / 50%;
-    padding: 7px;
-    margin: 3px auto;
+    border-radius: 8% / 50%;
+    padding: 1rem;
+    margin: 1rem auto 0;
 }
 
 .btn:hover {
@@ -124,4 +126,14 @@ body {
 .thank-you-img {
     width: 50%;
     
+}
+
+.selected {
+    color: rgb(251, 116, 19);
+    background-color: rgb(38, 47, 54);
+    width: 50%;
+    font-size: 14px;
+    margin: 8% auto;
+    padding: 5px 10px;
+    border-radius: 10% / 50%;
 }
