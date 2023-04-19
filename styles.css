@@ -1,7 +1,9 @@
 * {
     font-size: 16px;
     margin: 0;
+    padding: 0;
     text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -10,10 +12,19 @@ body {
 
 .title {
     color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 15px auto;
 }
 
 .instruction {
     color:rgba(255, 255, 255, 60%);
+    font-size: 10px;
+    line-height: 16px;
+    margin: 10px auto;
+}
+
+.title, .instruction {
+    text-align: left;
 }
 
 .attribution { 
@@ -30,3 +41,69 @@ body {
 .bold {
     font-weight: bold;
 }
+
+.rating-card {
+    background: linear-gradient(rgb(33, 40, 50), rgb(23, 30, 40));
+    width: 240px;
+    height: 240px;
+    border-radius: 10%;
+    margin: 30vh auto;
+    padding: 30px; 
+}
+
+.star-img-holder {
+    display: block;
+}
+
+.rating li,  .star-img-holder{
+    color: rgb(101, 109, 119);
+    background-color: rgb(38, 47, 54);
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+
+.star-img {
+    width: 100%;
+    height: 100%;
+}
+
+.rating {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.rating li {
+    color:rgba(255, 255, 255, 40%);
+    font-size: 12px;
+}
+
+.rating li:hover {
+    background-color: rgb(251, 118, 23);
+    color: rgb(255, 255, 255);
+}
+
+.btn {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(251, 118, 23);
+    border: none;
+    border-radius: 8% / 50%;
+    padding: 7px;
+    margin: 3px auto;
+}
+
+.btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(251, 118, 23);
+}
+
